@@ -30,20 +30,24 @@ function Header({ children }) {
       path: "#home",
     },
     {
-      position: 1014,
+      position: 973,
       path: "#about",
     },
     {
-      position: 1987.609375,
+      position: 1946,
       path: "#skills",
     },
     {
-      position: 2960.609375,
+      position: 2919,
       path: "#summary",
     },
     {
-      position: 3933.609375,
+      position: 4183.890625,
       path: "#portfolio",
+    },
+    {
+      position: 5156.890625,
+      path: "#contact",
     },
   ];
 

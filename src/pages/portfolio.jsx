@@ -24,6 +24,7 @@ const Portfolio = () => {
           Some of my most recent projects
         </h1>
       </div>
+      
       <div className=" w-full h-1/2 grid grid-cols-3 grid-rows-2  gap-10  place-items-center   px-5 ">
         <a
           href="https://bayamo-medical-center.vercel.app/"

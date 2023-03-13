@@ -23,7 +23,7 @@ const Home = () => {
           </a>
           <a
             className="px-8 py-3 border text-zinc-800 border-zinc-800 flex items-center  hover:bg-zinc-800 hover:text-white transition"
-            href=""
+            href="#contact"
           >
             Contact me <BsArrowDownCircle className="text-2xl ml-2" />
           </a>
