@@ -94,7 +94,7 @@ function Header({ children }) {
           <div className="flex items-center justify-between text-xl  w-1/4 ">
             <a
               className="flex items-center mr-5 font-semibold  text-zinc-800  px-6 py-2 hover:scale-105 transition-all "
-              href="https://w/3a.me/+18294649960"
+              href="https://wa.me/+18294649960"
             >
               <BsWhatsapp className="mr-4 text-2xl" />
               <p>+1 (829)-464-9960</p>
