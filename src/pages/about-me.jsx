@@ -4,22 +4,24 @@ const About = () => {
   return (
     <section
       id="about"
-      className=" h-[100vh]  flex flex-col items-center justify-center "
+      className=" h-[100vh] lg:h-[100vh] md:h-[120vh] max-sm:h-full    flex flex-col items-center justify-center  "
     >
-      <div className="text-center ">
+      <div className="text-center   xl:h-[10vh] ">
         <span className="bg-yellow-400  p-1">About Me</span>
-        <h2 className="text-5xl font-semibold mt-5">Know Me More</h2>
+        <h2 className="text-5xl max-sm:mt-2  font-semibold xl:mt-5 lg:mt-2 md:mt-0 ">
+          Know Me More
+        </h2>
       </div>
-      <div className=" h-3/5 flex flex-col justify-evenly items-center ">
-        <div className="flex w-full ">
-          <div className="w-2/3   ">
+      <div className=" xl:h-3/5  h-4/5 flex flex-col justify-evenly items-center ">
+        <div className="flex xl:flex-row xl:w-full lg:flex-col lg:justify-evenly lg:items-center md:flex-col md:justify-evenly md:items-center max-sm:flex-col max-sm:items-center ">
+          <div className="xl:w-2/3 xl:m-0 lg:w-3/5   md:w-[80vw] max-sm:w-full  max-sm:text-center max-sm:px-4">
             <h1 className="text-4xl web-font">
               Hello, I'm{" "}
               <span className="font-bold border-b-2 border-yellow-400 web-font  underline-offset-8 ">
                 Germán G.
               </span>
             </h1>
-            <p className="text-2xl w-full mt-4 web-font break-all ">
+            <p className="xl:text-2xl lg:text-xl md:text-xl w-full mt-4 web-font break-all ">
               <span>
                 I am a front-end developer specialized in ReactJS. I enjoy
                 creating clean, responsive, and user-friendly interfaces, and I
@@ -51,39 +53,43 @@ const About = () => {
               </span> */}
             </p>
           </div>
-          <div className="flex flex-col justify-center items-center  w-1/3">
-            <div className="relative mb-2 ">
+          <div className="flex flex-col justify-center items-center  w-1/3 max-sm:w-1/2">
+            <div className="relative xl:mb-2 xl:h-auto lg:mb-0 lg:h-[12vh] md:h-[12vh] max-sm:h-[12vh] ">
               <div className="  redondo  bg-yellow-300"></div>
-              <h1 className="redondo-num">15</h1>
+              <h1 className="redondo-num ">15</h1>
             </div>
-            <h1 className="text-3xl mt-4">
-              Months of <span className="font-semibold">Experiance</span>
+            <h1 className="xl:text-3xl lg:text-xl max-sm:text-xl max-sm:text-center max-sm:w-full   xl:mt-4 lg:mt-0">
+              Months of <span className="font-semibold">Experience</span>
             </h1>
           </div>
         </div>
-        <div className="grid grid-cols-4 w-full font-bold">
+        <div className="grid xl:grid-cols-4 xl:place-items-start lg:grid-cols-2 lg:gap-3 lg:place-items-center md:grid-cols-2 md:gap-3 md:place-items-center w-full font-bold max-sm:grid-cols-2 max-sm:px-5">
           <div>
             <span className="text-stone-700">Name:</span>
-            <h2 className="text-2xl font-bold">Germán González</h2>
+            <h2 className="text-2xl max-sm:text-lg font-bold">
+              Germán González
+            </h2>
           </div>
           <div className="flex flex-col">
             <span className="text-stone-700">Certificates:</span>
             <a
               href="https://platzi.com/p/glezrdg"
-              className="text-2xl font-bold hover:scale-105 transition-all"
+              className="text-2xl max-sm:text-lg font-bold hover:scale-105 transition-all"
             >
               Platzi.com/p/glezrdg
             </a>
           </div>
           <div>
             <span className="text-stone-700">E-mail:</span>
-            <h2 className="text-2xl font-bold select-text">
+            <h2 className="text-2xl max-sm:text-lg font-bold select-text">
               Glezrdg@gmail.com
             </h2>
           </div>
           <div>
             <span className="text-stone-700">From:</span>
-            <h2 className="text-2xl font-bold">Santo Domingo, DR</h2>
+            <h2 className="text-2xl max-sm:text-lg font-bold">
+              Santo Domingo, DR
+            </h2>
           </div>
         </div>
       </div>

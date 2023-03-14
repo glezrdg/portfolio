@@ -14,18 +14,18 @@ const Portfolio = () => {
   return (
     <section
       id="portfolio"
-      className="h-[100vh] flex flex-col items-center justify-evenly relative"
+      className="xl:h-[100vh] md:h-[140vh] max-sm:h-[190vh] flex flex-col items-center justify-evenly relative bg-zinc-100"
     >
-      <div className="absolute top-0 bottom-0 -right-[16vw] -z-10 -left-[16vw] bg-zinc-100 "></div>
+      <div className="absolute top-0 bottom-0 -right-[16vw] -z-10 -left-[16vw] bg-zinc-100 md:hidden lg:hidden max-sm:hidden xl:flex"></div>
 
       <div className="text-center ">
         <span className="bg-yellow-400  p-1">Portfolio</span>
-        <h1 className="text-5xl font-semibold mt-5">
+        <h1 className="text-5xl max-sm:text-4xl font-semibold mt-5">
           Some of my most recent projects
         </h1>
       </div>
-      
-      <div className=" w-full h-1/2 grid grid-cols-3 grid-rows-2  gap-10  place-items-center   px-5 ">
+
+      <div className=" w-full max-sm:grid-cols-1  max-sm:w-4/5 xl:h-1/2 lg:h-1/2  md:h-[80vh] grid xl:grid-cols-3 xl:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 md:grid-rows-3  gap-10  place-items-center   px-5 ">
         <a
           href="https://bayamo-medical-center.vercel.app/"
           target="_blank"
@@ -34,7 +34,7 @@ const Portfolio = () => {
           <img
             src="./img/bayamo-medical-center.png"
             alt=""
-            className="image w-full shadow-black shadow-sm "
+            className="image w-full shadow-black  shadow-sm "
           />
           <div class="overlay rounded-lg">
             <div class="text">

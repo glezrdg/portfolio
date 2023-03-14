@@ -5,15 +5,19 @@ const Summary = () => {
   return (
     <section
       id="summary"
-      className="h-[130vh] flex flex-col justify-evenly items-center "
+      className="h-[130vh] md:h-[150vh] flex flex-col justify-evenly items-center xl:p-0 lg:px-10 md:px-10 max-sm:h-[250vh]"
     >
       <div className="text-center w-full">
         <span className="bg-yellow-400  p-1">Resume</span>
-        <h1 className="text-5xl font-semibold mt-5">A Summary of my Resume</h1>
+        <h1 className="text-5xl max-sm:text-4xl font-semibold mt-5">
+          A Summary of my Resume
+        </h1>
       </div>
-      <div className="flex justify-between w-full">
-        <div className="flex flex-col w-1/2 mr-5 h-full">
-          <h2 className="text-3xl font-semibold">My Education</h2>
+      <div className="flex justify-between w-full max-sm:flex-col ">
+        <div className="flex flex-col w-1/2 mr-5 h-full max-sm:w-full max-sm:mb-5">
+          <h2 className="text-3xl font-semibold max-sm:text-center">
+            My Education
+          </h2>
           <div className="border-l border-yellow-400 pl-5 mt-5 w-full ">
             <div className="h-1/3">
               <h3 className="text-2xl font-semibold mb-3">IT Technician</h3>
@@ -45,8 +49,10 @@ const Summary = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col ml-5 w-1/2 h-full ">
-          <h2 className="text-3xl font-semibold">My Experience</h2>
+        <div className="flex flex-col ml-5 max-sm:m-0 w-1/2 h-full max-sm:w-full max-sm:mt-10">
+          <h2 className="text-3xl font-semibold max-sm:text-center">
+            My Experience
+          </h2>
           <div className="border-l border-yellow-400 pl-5 mt-5">
             <div className="h-1/3">
               <h3 className="text-2xl font-semibold mb-3">
@@ -80,11 +86,11 @@ const Summary = () => {
         </div>
       </div>
       <div className="w-full font-semibold flex flex-col items-center ">
-        <h2 className="text-3xl font-semibold flex  self-start ">
+        <h2 className="text-3xl font-semibold flex  self-start max-sm:self-center ">
           Main Skills
         </h2>
-        <div className="w-full flex">
-          <div className="p-4 bg-green-20 w-1/2">
+        <div className="w-full flex max-sm:flex-col">
+          <div className="p-4 bg-green-20 w-1/2 max-sm:w-full">
             <div className="flex flex-col mt-4">
               <div className="flex justify-between ">
                 <span>React JS</span>
@@ -117,7 +123,7 @@ const Summary = () => {
             </div>
           </div>
 
-          <div className="p-4 bg-green-20 w-1/2">
+          <div className="p-4 bg-green-20 w-1/2 max-sm:w-full">
             <div className="flex flex-col mt-4">
               <div className="flex justify-between ">
                 <span>CSS, Sass, TailwindCSS</span>

@@ -3,15 +3,18 @@ import { BsGithub } from "react-icons/bs";
 
 const Contact = () => {
   return (
-    <section id="contact" className="h-[100vh] cursor-pointer relative">
-      <div className="absolute top-0 bottom-0 -right-[16vw] -z-10 -left-[16vw] bg-yellow-300 "></div>
-      <div className="h-[85vh] flex justify-center items-center ">
-        <div className="w-1/2 h-[60vh]  flex flex-col ">
-          <div className="flex flex-col h-[15vh] ">
-            <h1 className="text-5xl font-semibold">
+    <section
+      id="contact"
+      className="xl:h-[100vh] lg:h-[100vh] md:h-[160vh] max-sm:h-[150vh]  cursor-pointer relative bg-yellow-300  flex flex-col justify-between w-full"
+    >
+      <div className="absolute top-0 bottom-0 -right-[16vw] -z-10 -left-[16vw] bg-yellow-300 lg:hidden md:hidden max-sm:hidden xl:flex "></div>
+      <div className="xl:h-4/5 md:h-4/5 flex xl:flex-row lg:flex-row justify-center items-center xl:p-0 lg:px-10 md:flex-col md:w-full max-sm:flex-col ">
+        <div className="w-1/2 max-sm:w-full  md:w-5/6 h-[60vh] xl:items-start lg:items-start md:items-center  flex flex-col   max-sm:items-center max-sm:justify-center">
+          <div className="flex flex-col max-sm:text-center h-[15vh] md:h-[20vh] ;lg:h-[25vh] max-sm:h-[15vh] ">
+            <h1 className="text-5xl max-sm:text-4xl font-semibold">
               Write me, and I write back
             </h1>
-            <span className="text-zinc-800  font-semibold mt-2">
+            <span className="text-zinc-800 xl:self-start lg:self-start md:self-center font-semibold mt-2">
               Usually that's how it works... right?
             </span>
           </div>
@@ -28,16 +31,16 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col  w-1/2 h-[60vh]">
-          <div className="h-[15vh] ">
-            <h1 className="mb-2 text-5xl font-semibold">
+        <div className="flex flex-col md:w-5/6 md:items-center w-1/2 h-[60vh] max-sm:w-full max-sm:h-1/2 max-sm:px-5">
+          <div className="h-[15vh] max-lg:h-[25vh] max-sm:text-center">
+            <h1 className="mb-2 text-5xl max-sm:text-4xl  font-semibold">
               Tell me about your new project
             </h1>
             <span className="  text-zinc-800 font-semibold ">
               Or your proposal...{" "}
             </span>
           </div>
-          <div className="flex flex-col ">
+          <div className="flex flex-col md:w-full">
             <div className="flex flex-col ">
               <label htmlFor="" className="text-lg">
                 Your name or company:
@@ -64,8 +67,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <footer className="relative w-full bg-zinc-800 h-[15vh] flex items-center justify-center">
-        <div className="absolute top-0 bottom-0 -right-[16vw] -z-10 -left-[16vw] bg-zinc-800 "></div>
+      <footer className="relative w-full  h-[15vh] flex items-center justify-center bg-zinc-800">
+        <div className="absolute top-0 bottom-0 -right-[16vw] -z-10 -left-[16vw] bg-zinc-800 max-lg:hidden md:hidden xl:flex"></div>
         <h1 className="text-white text-xl text-center">
           Copyright © 2023 Germán. All Rights Reserved.
         </h1>

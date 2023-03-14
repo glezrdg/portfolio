@@ -42,11 +42,11 @@ function Header({ children }) {
       path: "#summary",
     },
     {
-      position: 4183.890625,
+      position: 4378.5,
       path: "#portfolio",
     },
     {
-      position: 5156.890625,
+      position: 5351.5,
       path: "#contact",
     },
   ];
@@ -81,29 +81,29 @@ function Header({ children }) {
   return (
     <div>
       <header
-        className={`flex items-center transition-all fixed z-10 h-[7vh] left-0 right-0 top-0 cursor-pointer ${
+        className={`flex items-center transition-all fixed z-10 xl:h-[7vh] lg:h-[10vh] md:h-[10vh] max-sm:h-[10vh] left-0 right-0 top-0 cursor-pointer   max-sm:w-full ${
           scrollNav ? "bg-white shadow-md" : "bg-transparent"
         }`}
       >
         <nav
-          className={`w-[100vw] md:w-[68vw] m-auto flex items-center justify-between web-font`}
+          className={`w-[100vw] xl:w-[68vw] xl:m-auto  md:mx-10 lg:mx-10 flex items-center justify-between web-font max-sm:w-full max-sm:px-2 `}
         >
           <h2 className="text-3xl  font-bold">
             <a href="#home">GERMÁN </a>
           </h2>
-          <div className="flex items-center justify-between text-xl  w-1/4 ">
+          <div className="flex items-center justify-between text-xl  xl:w-1/4 md:w-2/3 lg:w-1/3 max-sm:w-full  ">
             <a
-              className="flex items-center mr-5 font-semibold  text-zinc-800  px-6 py-2 hover:scale-105 transition-all "
+              className="flex items-center mr-5 font-semibold  text-zinc-800  px-6 py-2 hover:scale-105 transition-all max-sm:text-lg max-sm:font-bold "
               href="https://wa.me/+18294649960"
             >
-              <BsWhatsapp className="mr-4 text-2xl" />
+              <BsWhatsapp className="mr-4 max-sm:mr-2 " />
               <p>+1 (829)-464-9960</p>
             </a>
 
-            <RxHamburgerMenu className="text-4xl " />
+            <RxHamburgerMenu className="text-4xl max-sm:text-3xl" />
           </div>
         </nav>
-        <div className="fixed  w-[5vw] h-[15vh]  flex flex-col justify-between items-center top-[50%] right-0 z-50 cursor-pointer">
+        <div className="fixed md:hidden lg:hidden w-[5vw] h-[15vh]  xl:flex flex-col justify-between items-center top-[50%] right-0 z-50 cursor-pointer max-sm:hidden">
           <div onClick={() => ScrollToScreen("up")} className="">
             <BsFillArrowUpCircleFill className=" text-6xl text-zinc-800 hover:scale-110 hover:bg-red-500 rounded-full m-0 p-0 transition-all" />
           </div>
@@ -112,8 +112,8 @@ function Header({ children }) {
           </div>
         </div>
       </header>
-      <main className="xl:w-[68vw] h-[100vh] m-auto text-zinc-800  relative">
-        <div className="absolute top-0 bottom-0 -right-[16vw] -z-10 -left-[16vw] bg-yellow-300 "></div>
+      <main className="xl:w-[68vw] lg:w-[100vw] md:w-[100vw] max-sm:w-[100vw] bg-yellow-300 h-[100vh] m-auto max-sm:m-0 text-zinc-800  relative">
+        <div className="absolute top-0 bottom-0 -right-[16vw] xl:flex lg:hidden md:hidden -z-10 -left-[16vw] bg-yellow-300 max-sm:hidden "></div>
 
         {children}
       </main>
