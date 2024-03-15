@@ -166,22 +166,28 @@ function Header({ children }) {
         <nav
           className={`w-[100vw] xl:w-[68vw] xl:m-auto  md:mx-10 lg:mx-10 flex items-center justify-between web-font max-sm:w-full max-sm:px-2 `}
         >
-          <h2 className="text-3xl  font-bold">
-            <a href="#home">GERMÁN </a>
-          </h2>
+          <h1 className="text-3xl font-bold">SIBAIKOLE</h1>
+          <ul className="flex w-1/3  uppercase justify-evenly items-center font-bold text-lg">
+            <li className="">
+              <a href="#home">Inicio</a>
+            </li>
+            <li className="">
+              <a href="#services"></a> Servicios
+            </li>
+            <li className="#works">
+              <a href="">Trabajos</a>
+            </li>
+            <li className="#about">
+              <a href="">Historia</a>
+            </li>
+          </ul>
 
-          <div className="flex items-center justify-between text-xl  xl:w-1/4 md:w-2/3 lg:w-1/3 max-sm:w-full  ">
-            <a
-              className="flex items-center mr-5 font-semibold  text-zinc-800  px-6 py-2 hover:scale-105 transition-all max-sm:text-lg max-sm:font-bold "
-              href="https://wa.me/+18294649960"
-            >
-              <BsWhatsapp className="mr-4 max-sm:mr-2 " />
-              <p>+1 (829)-464-9960</p>
-            </a>
+          <button className="bg-[#7f2627] rounded-sm shadow-md text-zinc-200 font-semibold text-lg px-10 py-2 ">
+            Contacto
+          </button>
 
-            <div className="" onClick={openNav}>
-              <RxHamburgerMenu className="text-4xl max-sm:text-3xl hover:scale-110 transition-all" />
-            </div>
+          <div className="lg:hidden" onClick={openNav}>
+            <RxHamburgerMenu className="text-4xl max-sm:text-3xl hover:scale-110 transition-all" />
           </div>
         </nav>
         <div className="fixed md:hidden lg:hidden w-[5vw] h-[15vh]  xl:flex flex-col justify-between items-center top-[50%] right-0 z-50 cursor-pointer max-sm:hidden">
@@ -193,8 +199,8 @@ function Header({ children }) {
           </div>
         </div>
       </header>
-      <main className="xl:w-[68vw] lg:w-[100vw] md:w-[100vw] max-sm:w-[100vw] bg-yellow-300 h-[100vh] m-auto max-sm:m-0 text-zinc-800  relative">
-        <div className="absolute top-0 bottom-0 -right-[16vw] xl:flex lg:hidden md:hidden -z-10 -left-[16vw] bg-yellow-300 max-sm:hidden "></div>
+      <main className="xl:w-[68vw] lg:w-[100vw] md:w-[100vw] max-sm:w-[100vw]  h-[100vh] m-auto max-sm:m-0 text-zinc-800  relative">
+        <div className="absolute top-0 bottom-0 -right-[16vw] xl:flex lg:hidden md:hidden -z-10 -left-[16vw]  max-sm:hidden "></div>
 
         {children}
       </main>

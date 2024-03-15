@@ -3,7 +3,7 @@ import { BsGithub } from "react-icons/bs";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import toast, { Toaster } from "react-hot-toast";
-import { createEmail } from "../api/email.controller";
+import { createEmail } from "../../api/email.controller";
 
 const Contact = () => {
   return (
