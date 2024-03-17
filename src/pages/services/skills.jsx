@@ -1,6 +1,7 @@
 import React from "react";
 import "./skills.css";
 
+import { FaArrowDown } from "react-icons/fa";
 import { BsPaletteFill } from "react-icons/bs";
 import { HiDesktopComputer } from "react-icons/hi";
 import { FaReact } from "react-icons/fa";
@@ -8,6 +9,46 @@ import { HiOutlineDocumentReport } from "react-icons/hi";
 import { GoGraph } from "react-icons/go";
 import { TbSpeakerphone } from "react-icons/tb";
 import { MdOutlineConstruction } from "react-icons/md";
+import Slider from "./components/slider";
+
+import icon1 from "../../../public/img/ruler.webp";
+import icon2 from "../../../public/img/construction.webp";
+import icon3 from "../../../public/img/remodelation.webp";
+import icon4 from "../../../public/img/supervision.webp";
+
+const IMAGES = [icon1, icon2, icon3, icon4];
+
+const items = [
+  {
+    title: "Proyectos Arquitectonicos",
+    description:
+      " ¡Transforma tus sueños en realidad con nuestro servicio de Diseño Arquitectónico! Con una combinación de creatividad y experiencia, creamos espacios que cautivan, inspiran y funcionan a la perfección.Desde renovaciones elegantes hasta proyectos comerciales impresionantes, estamos aquí para dar vida a tu visión. ",
+    lastSentence: "¡Déjanos diseñar un futuro extraordinario para ti!",
+    url: "./img/ruler.webp",
+  },
+  {
+    title: "Construccion",
+    description:
+      "Construyendo Sueños, Bloque a Bloque. En cada fase de la construcción, desde la excavación fundacional hasta el broche final de los detalles, nuestro compromiso es dar vida a tu visión. Calidad suprema y precisión son los pilares que garantizan estructuras que no solo son robustas sino que también cuentan la historia de tus aspiraciones.",
+    lastSentence: "Forjamos realidad con integridad y arte.",
+    url: "./img/construction.webp",
+  },
+  {
+    title: "Remodelaciones",
+    description:
+      "Espacios Renovados, Vidas Transformadas. Revitalizamos tu entorno con una fusión de habilidad y creatividad sin igual. Hogares y negocios se transforman bajo nuestro toque, emergiendo como espacios optimizados y estilizados que reflejan tus necesidades y personalidad.",
+    lastSentence: "Cada renovación es un renacer.",
+    url: "./img/remodelation.webp",
+  },
+  {
+    title: "Supervision",
+    description:
+      "Tu Paz Mental es Nuestro Compromiso. Nuestro equipo de supervisión asegura que cada fase de tu proyecto se ejecuta a la altura de tus expectativas. Profesionalismo y eficiencia son las constantes que nos permiten entregar resultados que superan la definición de impecable.",
+    lastSentence: "Vigilamos cada detalle; tú solo disfruta el resultado.",
+    url: "./img/supervision.webp",
+  },
+];
+
 const Skills = () => {
   return (
     <section
@@ -24,55 +65,9 @@ const Skills = () => {
           Los servicios que brindamos
         </h1>
       </div>
-      <div className="h-2/3 max-sm:h-4/5 w-full grid gap-9  xl:p-0 xl:grid-cols-3 xl:grid-rows-2  lg:grid-cols-2 lg:grid-rows-3 md:grid-cols-2 md:px-10 lg:px-20 max-sm:grid-cols-1 max-sm:px-5 ">
-        <div className="flex flex-col items-center justify-evenly  text-center ">
-          <MdOutlineConstruction className=" text-6xl text-[#7f2627]" />
-          <h1 className="text-3xl font-semibold">Diseños</h1>
-          <p className="w-2/3">
-            Transformamos tus ideas en realidad. Nuestros expertos en diseño
-            crean planos innovadores y funcionales que dan vida a tus proyectos,
-            ya sean hogares, oficinas o espacios comerciales.
-          </p>
-        </div>
-        <div className="flex flex-col items-center justify-evenly  text-center">
-          <MdOutlineConstruction className=" text-6xl text-[#7f2627]" />
-          <h1 className="text-3xl font-semibold">Construcción</h1>
-          <p>
-            Construimos tus sueños block a block. Desde la excavación
-            hasta los últimos detalles, nos encargamos de materializar tu visión
-            con calidad y precisión, asegurando resultados duraderos y
-            satisfactorios.
-          </p>
-        </div>
-        <div className="flex flex-col items-center justify-evenly  text-center">
-          <FaReact className=" text-6xl text-[#7f2627]" />
-          <h1 className="text-3xl font-semibold">Remodelación</h1>
-          <p>
-            Renovamos espacios para transformar tu entorno. Con habilidad y
-            creatividad, revitalizamos hogares y negocios, mejorando su
-            funcionalidad y estética para adaptarse a tus necesidades y gustos.
-          </p>
-        </div>
-        <div className="flex flex-col items-center justify-evenly  text-center">
-          <HiOutlineDocumentReport className=" text-6xl text-[#7f2627]" />
-          <h1 className="text-3xl font-semibold">Proyectos Arquitectónicos</h1>
-          <p>
-            Diseñamos el futuro. Nuestros proyectos arquitectónicos combinan
-            innovación y estética para crear espacios que inspiran y funcionan a
-            la perfección, desde residencias hasta complejos comerciales.
-          </p>
-        </div>
-        <div className="flex flex-col items-center justify-evenly  text-center">
-          <GoGraph className=" text-6xl text-[#7f2627]" />
-          <h1 className="text-3xl font-semibold">Supervisión</h1>
-          <p>
-            Tu tranquilidad, nuestra prioridad. Con un equipo dedicado de
-            supervisores, garantizamos que cada etapa de tu proyecto se lleve a
-            cabo con profesionalismo y eficiencia, asegurando resultados
-            impecables en todo momento.
-          </p>
-        </div>
-        
+
+      <div className="h-[500px] w-[900px] ">
+        <Slider items={items} />
       </div>
     </section>
   );

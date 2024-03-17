@@ -107,10 +107,10 @@ function Header({ children }) {
           className="overlay-menu flex items-center justify-center text-2xl font-bold text-white"
           ref={menu}
         >
-          <a href="javascript:void(0)" class="closebtn" onClick={closeNav}>
+          <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
             &times;
           </a>
-          <div class="flex flex-col justify-evenly items-center h-1/2">
+          <div className="flex flex-col justify-evenly items-center h-1/2">
             <a
               href="#home"
               className="hover:text-yellow-300 transition-all "

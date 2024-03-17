@@ -15,9 +15,9 @@ function App() {
     <Header>
       <Home />
       <Skills />
+      <Portfolio />
       <About />
       <Summary />
-      <Portfolio />
       <Contact />
     </Header>
   );

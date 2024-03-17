@@ -29,7 +29,7 @@ const Home = () => {
               </span>
               
               <span className=" font-bold words-up">
-                supervición
+                supervisión
               </span>
               
             </div>
