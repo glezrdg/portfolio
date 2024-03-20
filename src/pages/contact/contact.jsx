@@ -9,18 +9,18 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="xl:h-[100vh] lg:h-[100vh] md:h-[160vh] max-sm:h-[150vh]  cursor-pointer relative bg-yellow-300  flex flex-col justify-between w-full"
+      className="xl:h-[100vh] lg:h-[100vh] md:h-[160vh] max-sm:h-[150vh]  cursor-pointer relative bg-[#7f2627]  text-zinc-100 flex flex-col justify-between w-full"
     >
       <Toaster />
-      <div className="absolute top-0 bottom-0 -right-[16vw] -z-10 -left-[16vw] bg-yellow-300 lg:hidden md:hidden max-sm:hidden xl:flex "></div>
+      <div className="absolute top-0 bottom-0 -right-[16vw] -z-10 -left-[16vw] bg-[#7f2627]  lg:hidden md:hidden max-sm:hidden xl:flex "></div>
       <div className="xl:h-4/5 md:h-4/5 flex xl:flex-row lg:flex-row justify-center items-center xl:p-0 lg:px-10 md:flex-col md:w-full max-sm:flex-col ">
         <div className="w-1/2 max-sm:w-full  md:w-5/6 h-[60vh] xl:items-start lg:items-start md:items-center  flex flex-col   max-sm:items-center max-sm:justify-center">
           <div className="flex flex-col max-sm:text-center h-[15vh] md:h-[20vh] ;lg:h-[25vh] max-sm:h-[15vh] ">
             <h1 className="text-5xl max-sm:text-4xl font-semibold">
-              Write me, and I write back
+              Escribenos, respuesta inmediata!
             </h1>
-            <span className="text-zinc-800 xl:self-start lg:self-start md:self-center font-semibold mt-2">
-              Usually that's how it works... right?
+            <span className=" xl:self-start lg:self-start md:self-center font-semibold mt-2">
+              Usualmente es como funciona
             </span>
           </div>
           <p className="w-4/5 text-2xl  ">
@@ -41,9 +41,7 @@ const Contact = () => {
             <h1 className="mb-2 text-5xl max-sm:text-4xl  font-semibold">
               Tell me about your new project
             </h1>
-            <span className="  text-zinc-800 font-semibold ">
-              Or your proposal...{" "}
-            </span>
+            <span className="  font-semibold ">Or your proposal... </span>
           </div>
           <Formik
             initialValues={{

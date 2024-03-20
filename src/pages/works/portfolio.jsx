@@ -1,31 +1,98 @@
 import React from "react";
+import "./portfolio.css";
+// Assuming the other imports remain the same
 
-import { TbBrandVite } from "react-icons/tb";
-import { FaReact } from "react-icons/fa";
-import { TbBrandFirebase } from "react-icons/tb";
-import { RiAngularjsFill } from "react-icons/ri";
-import { SiCsharp } from "react-icons/si";
-import { AiFillHtml5 } from "react-icons/ai";
-import { DiCss3 } from "react-icons/di";
-import { SiMongodb } from "react-icons/si";
-import { SiExpress } from "react-icons/si";
+// Import the InstagramPost component here
+const Images = [
+  "./2017 project/este1.jpg",
+  "./2017 project/este2.jpg",
+  "./2017 project/este3.jpg",
+  "./2017 project/este4.jpg",
+  "./2017 project/este5.jpg",
+  "./2017 project/este6.jpg",
+  "./2017 project/este7.jpg",
+  "./2017 project/este8.jpg",
+  "./2017 project/este9.jpg",
+  "./alameda/ana1.jpg",
+  "./alameda/ana2.jpg",
+  "./alameda/ana3.jpg",
+  "./aniomis/ani1.jpg",
+  "./aniomis/ani2.jpg",
+  "./aniomis/ani3.jpg",
+  "./aniomis/ani4.jpg",
+  "./aniomis/ani5.jpg",
+  "./aniomis/ani6.jpg",
+  "./aniomis/ani7.jpg",
+  "./aniomis/ani8.jpg",
+  "./aniomis/ani9.jpg",
+  "./aniomis/ani10.jpg",
+  "./aniomis/ani11.jpg",
+  "./aniomis/ani12.jpg",
+  "./bcdc/bcdc3.jpg",
+  "./bcdc/bcdc4.jpg",
+  "./bcdc/bcdc5.jpg",
+  "./bcdc/bcdc6.jpg",
+  "./bcdc/bcdc7.jpg",
+  "./Biocaribe/biocaribe2.jpg",
+  "./Biocaribe/biocaribe1.jpg",
+  "./Biocaribe/biocaribe.jpg",
+  "./FOTOS SHEETROCK/s1.jpg",
+  "./FOTOS SHEETROCK/s2.jpg",
+  "./FOTOS SHEETROCK/s3.jpg",
+  "./FOTOS SHEETROCK/s4.jpg",
+  "./FOTOS SHEETROCK/s5.jpg",
+  "./FOTOS SHEETROCK/s6.jpg",
+  "./FOTOS SHEETROCK/s7.jpeg",
+  "./FOTOS SHEETROCK/s8.jpeg",
+  "./FOTOS SHEETROCK/s9.jpeg",
+  "./FOTOS SHEETROCK/s10.jpeg",
+  "./FOTOS SHEETROCK/s11.jpeg",
+  "./FOTOS SHEETROCK/s12.jpeg",
+  "./FOTOS SHEETROCK/s13.jpeg",
+  "./FOTOS SHEETROCK/s14.jpg",
+  "./hangar/hangar1.jpg",
+  "./hangar/hangar2.jpg",
+  "./hangar/hangar3.jpg",
+  "./hangar/hangar4.jpg",
+  "./hangar/hangar5.jpg",
+  "./parque habitat/PHC.jpg",
+  "./parque habitat/PHC 2.jpg",
+  "./PedidosYa/foto1.jpg",
+  "./PedidosYa/foto2.jpg",
+  "./PedidosYa/foto3.jpg",
+  "./PedidosYa/foto4.jpg",
+  "./PedidosYa/foto5.jpg",
+  "./PedidosYa/foto6.jpg",
+  "./studio/ESTUDIO DE GRABACION 1.jpg",
+  "./studio/ESTUDIO DE GRABACION 2.jpg",
+  "./studio/ESTUDIO DE GRABACION 3.jpg",
+  "./studio/ESTUDIO DE GRABACION 4.jpg",
+  "./studio/ESTUDIO DE GRABACION 5.jpg",
+  "./studio/ESTUDIO DE GRABACION 6.jpg",
+];
 
 const Portfolio = () => {
   return (
     <section
       id="portfolio"
-      className="xl:h-[100vh] md:h-[140vh] max-sm:h-[190vh] flex flex-col items-center justify-evenly relative "
+      className="xl:h-[150vh] md:h-[140vh] max-sm:h-[190vh] flex flex-col items-center justify-evenly relative "
     >
       <div className="absolute top-0 bottom-0 -right-[16vw] -z-10 -left-[16vw]  md:hidden lg:hidden max-sm:hidden xl:flex"></div>
 
-      <div className="text-center ">
-        <span className="bg-yellow-400  p-1">Portafolio</span>
+      <div className="text-center mt-[12vh] mb-20">
+        <span className="bg-[#7f2627] text-zinc-200 p-1">Portafolio</span>
         <h1 className="text-5xl max-sm:text-4xl font-semibold mt-5">
           Algunos de los proyectos que hemos trabajado
         </h1>
       </div>
 
-      <div className=" w-full max-sm:grid-cols-1  max-sm:w-4/5 xl:h-1/2 lg:h-1/2  md:h-[80vh] grid xl:grid-cols-3 xl:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 md:grid-rows-3  gap-10  place-items-center   px-5 "></div>
+      <div className="gallery overflow-y-scroll ">
+        {Images.map((item) => (
+          <div className="gallery-item r">
+            <img src={item} alt="" className="rounded-md shadow-sm" />
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
