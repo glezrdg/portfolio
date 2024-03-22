@@ -22,7 +22,7 @@ const items = [
   {
     title: "Proyectos Arquitectonicos",
     description:
-      " ¡Transforma tus sueños en realidad con nuestro servicio de Diseño Arquitectónico! Con una combinación de creatividad y experiencia, creamos espacios que cautivan, inspiran y funcionan a la perfección.Desde renovaciones elegantes hasta proyectos comerciales impresionantes, estamos aquí para dar vida a tu visión. ",
+      " ¡Transforma tus sueños en realidad con nuestro servicio de Diseño Arquitectónico! Con una combinación de creatividad y experiencia, creamos espacios que cautivan. Desde renovaciones elegantes hasta proyectos comerciales impresionantes, estamos aquí para dar vida a tu visión. ",
     lastSentence: "¡Déjanos diseñar un futuro extraordinario para ti!",
     url: "./img/ruler.webp",
   },
