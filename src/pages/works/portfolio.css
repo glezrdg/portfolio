@@ -8,4 +8,8 @@
   .gallery-item {
     break-inside: avoid;
     margin-bottom: 16px;
+    transition: 250ms ease-in-out;
+  }
+  .gallery-item:hover{
+    transform: scale(1.05);
   }

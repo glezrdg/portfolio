@@ -4,30 +4,8 @@ import "./portfolio.css";
 
 // Import the InstagramPost component here
 const Images = [
-  "./2017 project/este1.jpg",
-  "./2017 project/este2.jpg",
-  "./2017 project/este3.jpg",
-  "./2017 project/este4.jpg",
-  "./2017 project/este5.jpg",
-  "./2017 project/este6.jpg",
-  "./2017 project/este7.jpg",
-  "./2017 project/este8.jpg",
-  "./2017 project/este9.jpg",
-  "./alameda/ana1.jpg",
-  "./alameda/ana2.jpg",
-  "./alameda/ana3.jpg",
-  "./aniomis/ani1.jpg",
-  "./aniomis/ani2.jpg",
-  "./aniomis/ani3.jpg",
-  "./aniomis/ani4.jpg",
-  "./aniomis/ani5.jpg",
-  "./aniomis/ani6.jpg",
-  "./aniomis/ani7.jpg",
-  "./aniomis/ani8.jpg",
-  "./aniomis/ani9.jpg",
-  "./aniomis/ani10.jpg",
-  "./aniomis/ani11.jpg",
-  "./aniomis/ani12.jpg",
+  
+ 
   "./bcdc/bcdc3.jpg",
   "./bcdc/bcdc4.jpg",
   "./bcdc/bcdc5.jpg",
@@ -50,11 +28,7 @@ const Images = [
   "./FOTOS SHEETROCK/s12.jpeg",
   "./FOTOS SHEETROCK/s13.jpeg",
   "./FOTOS SHEETROCK/s14.jpg",
-  "./hangar/hangar1.jpg",
-  "./hangar/hangar2.jpg",
-  "./hangar/hangar3.jpg",
-  "./hangar/hangar4.jpg",
-  "./hangar/hangar5.jpg",
+  
   "./parque habitat/PHC.jpg",
   "./parque habitat/PHC 2.jpg",
   "./PedidosYa/foto1.jpg",
@@ -63,12 +37,35 @@ const Images = [
   "./PedidosYa/foto4.jpg",
   "./PedidosYa/foto5.jpg",
   "./PedidosYa/foto6.jpg",
-  "./studio/ESTUDIO DE GRABACION 1.jpg",
-  "./studio/ESTUDIO DE GRABACION 2.jpg",
-  "./studio/ESTUDIO DE GRABACION 3.jpg",
-  "./studio/ESTUDIO DE GRABACION 4.jpg",
-  "./studio/ESTUDIO DE GRABACION 5.jpg",
-  "./studio/ESTUDIO DE GRABACION 6.jpg",
+  "./hangar/hangar1.jpg",
+  "./hangar/hangar2.jpg",
+  "./hangar/hangar3.jpg",
+  "./hangar/hangar4.jpg",
+  "./hangar/hangar5.jpg",
+  "./alameda/ana1.jpg",
+  "./alameda/ana2.jpg",
+  "./alameda/ana3.jpg",
+  "./aniomis/ani1.jpg",
+  "./aniomis/ani2.jpg",
+  "./aniomis/ani3.jpg",
+  "./aniomis/ani4.jpg",
+  "./aniomis/ani5.jpg",
+  "./aniomis/ani6.jpg",
+  "./aniomis/ani7.jpg",
+  "./aniomis/ani8.jpg",
+  "./aniomis/ani9.jpg",
+  "./aniomis/ani10.jpg",
+  "./aniomis/ani11.jpg",
+  "./aniomis/ani12.jpg",
+  "./2017 project/este1.jpg",
+  "./2017 project/este2.jpg",
+  "./2017 project/este3.jpg",
+  "./2017 project/este4.jpg",
+  "./2017 project/este5.jpg",
+  "./2017 project/este6.jpg",
+  "./2017 project/este7.jpg",
+  "./2017 project/este8.jpg",
+  "./2017 project/este9.jpg",
 ];
 
 const Portfolio = () => {
@@ -86,7 +83,7 @@ const Portfolio = () => {
         </h1>
       </div>
 
-      <div className="gallery overflow-y-scroll ">
+      <div className="gallery overflow-y-scroll p-4">
         {Images.map((item) => (
           <div className="gallery-item r">
             <img src={item} alt="" className="rounded-md shadow-sm" />
