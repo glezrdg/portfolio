@@ -27,7 +27,7 @@ const Portfolio = () => {
 
       <div className=" w-full max-sm:grid-cols-1  max-sm:w-4/5 xl:h-1/2 lg:h-1/2  md:h-[80vh] grid xl:grid-cols-3 xl:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 md:grid-rows-3  gap-10  place-items-center   px-5 ">
         <a
-          href="https://bayamo-medical-center.vercel.app/"
+          href="https://bayamomedicalcenter.com"
           target="_blank"
           className="figure w-full p-3 bg-zinc-800 shadow-black shadow-md rounded-lg"
         >
@@ -119,12 +119,12 @@ const Portfolio = () => {
           </div>
         </a>
         <a
-          href="https://blog-rust-tau-92.vercel.app/"
+          href="https://sibaikole.com/"
           target="_blank"
           className="figure w-full  p-3 bg-zinc-800 shadow-black shadow-md rounded-lg"
         >
           <img
-            src="./img/clean-blog.png"
+            src="./img/sibaikole-gif.gif"
             alt=""
             className="w-full shadow-black shadow-sm"
           />
@@ -135,7 +135,7 @@ const Portfolio = () => {
                 <span className="text-4xl">+</span>
                 <DiCss3 className="text-4xl" />
               </div>
-              <h1 className="text-white text-xl font-semibold">Mi Blog</h1>
+              <h1 className="text-white text-xl font-semibold">Sibaikole</h1>
               <span>Front-end app</span>
             </div>
           </div>

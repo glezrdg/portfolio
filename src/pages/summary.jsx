@@ -51,10 +51,18 @@ const Summary = () => {
         </div>
         <div className="flex flex-col ml-5 max-sm:m-0 w-1/2 h-full max-sm:w-full max-sm:mt-10">
           <h2 className="text-3xl font-semibold max-sm:text-center">
-            My Experience
+            My Recent Experience
           </h2>
           <div className="border-l border-yellow-400 pl-5 mt-5">
-            <div className="h-1/3">
+            <div className=" h-1/3">
+              <h3 className="text-2xl font-semibold mb-3">
+                Ministerio de Economía, Planificación y Desarrollo
+              </h3>
+              <span className="  text-xl"> 2023 - Present</span>
+              <p className="text-stone-600 text-lg mt-3 mb-5">Hybrid</p>
+              <hr />
+            </div>
+            <div className="mt-4 h-1/3">
               <h3 className="text-2xl font-semibold mb-3">
                 Front-end Developer, IT Technician
               </h3>
@@ -76,12 +84,6 @@ const Summary = () => {
               </p>
               <hr />
             </div>
-            <div className="mt-4 h-1/3">
-              <h3 className="text-2xl font-semibold mb-3">Freelance</h3>
-              <span className="  text-xl"> 2021 - Present</span>
-              <p className="text-stone-600 text-lg mt-3 mb-5">Online</p>
-              <hr />
-            </div>
           </div>
         </div>
       </div>
@@ -94,31 +96,31 @@ const Summary = () => {
             <div className="flex flex-col mt-4">
               <div className="flex justify-between ">
                 <span>React JS</span>
-                <span>83.33%</span>
+                <span>87.33%</span>
               </div>
               <div className="flex w-full mt-2">
-                <div className="h-5 w-5/6 rounded-l-md shadow-md    bg-sky-700"></div>
-                <div className="h-5 w-1/6 rounded-r-md shadow-md bg-stone-200"></div>
+                <div className="h-5 w-[90%] rounded-l-md shadow-md    bg-sky-700"></div>
+                <div className="h-5 w-[10%] rounded-r-md shadow-md bg-stone-200"></div>
               </div>
             </div>
             <div className="flex flex-col mt-4">
               <div className="flex justify-between">
                 <span>Angular</span>
-                <span>66.66%</span>
+                <span>83.66%</span>
               </div>
               <div className="flex w-full mt-2">
-                <div className="h-5 w-2/3 rounded-l-full shadow-md  bg-red-500"></div>
-                <div className="h-5 w-1/3 rounded-r-full shadow-md bg-stone-200"></div>
+                <div className="h-5 w-[83%] rounded-l-full shadow-md  bg-red-500"></div>
+                <div className="h-5 w-[17%] rounded-r-full shadow-md bg-stone-200"></div>
               </div>
             </div>
             <div className="flex flex-col mt-4">
               <div className="flex justify-between">
                 <span>Node JS, C# Entity Framework</span>
-                <span>50%</span>
+                <span>57%</span>
               </div>
               <div className="flex w-full mt-2">
-                <div className="h-5 w-1/2 rounded-l-full shadow-lg  bg-lime-600"></div>
-                <div className="h-5 w-1/2 rounded-r-full shadow-lg bg-stone-200"></div>
+                <div className="h-5 w-[57%] rounded-l-full shadow-lg  bg-lime-600"></div>
+                <div className="h-5 w-[43%] rounded-r-full shadow-lg bg-stone-200"></div>
               </div>
             </div>
           </div>
@@ -127,21 +129,21 @@ const Summary = () => {
             <div className="flex flex-col mt-4">
               <div className="flex justify-between ">
                 <span>CSS, Sass, TailwindCSS</span>
-                <span>93%</span>
+                <span>87%</span>
               </div>
               <div className="flex w-full mt-2">
-                <div className="h-5 w-[93%] rounded-l-md shadow-md bg-sky-500"></div>
-                <div className="h-5 w-[7%] rounded-r-md shadow-md bg-stone-200"></div>
+                <div className="h-5 w-[87%] rounded-l-md shadow-md bg-sky-500"></div>
+                <div className="h-5 w-[13%] rounded-r-md shadow-md bg-stone-200"></div>
               </div>
             </div>
             <div className="flex flex-col mt-4">
               <div className="flex justify-between">
                 <span>Mongo, SQL </span>
-                <span>50%</span>
+                <span>71%</span>
               </div>
               <div className="flex w-full mt-2">
-                <div className="h-5 w-1/2 rounded-l-full shadow-md  bg-green-600"></div>
-                <div className="h-5 w-1/2 rounded-r-full shadow-md bg-stone-200"></div>
+                <div className="h-5 w-[71%] rounded-l-full shadow-md  bg-green-600"></div>
+                <div className="h-5 w-[29%] rounded-r-full shadow-md bg-stone-200"></div>
               </div>
             </div>
             <div className="flex flex-col mt-4">

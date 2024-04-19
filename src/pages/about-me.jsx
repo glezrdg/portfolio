@@ -56,7 +56,7 @@ const About = () => {
           <div className="flex flex-col justify-center items-center  w-1/3 max-sm:w-1/2">
             <div className="relative xl:mb-2 xl:h-auto lg:mb-0 lg:h-[12vh] md:h-[12vh] max-sm:h-[12vh] ">
               <div className="  redondo  bg-yellow-300"></div>
-              <h1 className="redondo-num ">15</h1>
+              <h1 className="redondo-num ">26</h1>
             </div>
             <h1 className="xl:text-3xl lg:text-xl max-sm:text-xl max-sm:text-center max-sm:w-full   xl:mt-4 lg:mt-0">
               Months of <span className="font-semibold">Experience</span>

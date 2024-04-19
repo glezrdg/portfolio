@@ -16,7 +16,7 @@ const Home = () => {
           DEVELOPER
         </h1>
         <p className="xl:text-2xl lg:text-xl md:text-xl mb-5">
-          Directly from Santo Domingo, DR.{" "}
+          Based in Punta Cana, DR.{" "}
         </p>
         <div className="flex xl:w-3/5 lg:w-4/5 max-sm:w-full max-sm:px-5 justify-between text-lg font-semibold ">
           <a
@@ -29,7 +29,7 @@ const Home = () => {
             className="px-8 py-3 border text-zinc-800 border-zinc-800 flex items-center  hover:bg-zinc-800 hover:text-white transition"
             href="#contact"
           >
-            Contact me <BsArrowDownCircle className="text-2xl ml-2" />
+            Send email <BsArrowDownCircle className="text-2xl ml-2" />
           </a>
         </div>
       </div>

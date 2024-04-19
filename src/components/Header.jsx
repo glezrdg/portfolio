@@ -167,7 +167,7 @@ function Header({ children }) {
           className={`w-[100vw] xl:w-[68vw] xl:m-auto  md:mx-10 lg:mx-10 flex items-center justify-between web-font max-sm:w-full max-sm:px-2 `}
         >
           <h2 className="text-3xl  font-bold">
-            <a href="#home">GERMÁN </a>
+            <a href="#home">GERMÁN G.</a>
           </h2>
 
           <div className="flex items-center justify-between text-xl  xl:w-1/4 md:w-2/3 lg:w-1/3 max-sm:w-full  ">
@@ -176,7 +176,7 @@ function Header({ children }) {
               href="https://wa.me/+18294649960"
             >
               <BsWhatsapp className="mr-4 max-sm:mr-2 " />
-              <p>+1 (829)-464-9960</p>
+              <p>Whatsapp</p>
             </a>
 
             <div className="" onClick={openNav}>
